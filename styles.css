@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #FF5733, #FFC300);
+    font-size: 20px; 
+    font-weight: bold; 
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#square2 {
+    background: linear-gradient(45deg, #1B1464, #3E218C);
+}
+
+#square3 {
+    background: linear-gradient(45deg, #0E5CAD, #19B5FE);
+}
+
+#square4 {
+    background: linear-gradient(45deg, #0E6655, #27AE60);
+}
+
+#square5 {
+    background: linear-gradient(45deg, #78281F, #E74C3C);
+}
+
+#square6 {
+    background: linear-gradient(45deg, #76448A, #9B59B6);
+}
+
+#square7 {
+    background: linear-gradient(45deg, #1D8348, #2ECC71);
+}
+
+#square8 {
+    background: linear-gradient(45deg, #A04000, #E67E22);
+}
+
+#square9 {
+    background: linear-gradient(45deg, #6E2C00, #D35400);
+}
+
+.square.expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: zoom-out;
+}
